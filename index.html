@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet website Template in HTML and Css</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding:0;
+    }
+    /* Used for Over all Page size*/
+
+    .container-fluid{
+      width:100%;    
+      height:auto;
+    background:linear-gradient(to left,rgba(0,0,0,0.2)20%,rgba(0,0,0,0.2)50%),url("bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    /* Used for menu and content width*/
+
+    .container{
+        width: 1200px;
+        height:80px;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+    }
+    /* Used for h2 Menu title*/
+
+    .container h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color:#fff;
+        cursor: pointer;
+    }
+    /* Used for h2 Menu title mouse hover*/
+
+    .container h2:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color:goldenrod;
+        cursor: pointer;
+    }
+    /* Used for Menu*/
+
+    .container ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     /* Used for Menu list alignment*/
+
+    .container ul li{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        list-style: none;
+        margin-right: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    /* Used for Menu active color*/
+
+    .container ul li:first-child{
+        color:greenyellow;
+    }
+    /* Used for Menu mouse hover color*/
+
+    .container ul li:hover{
+        color:yellow;
+    }
+    /* Used for Menu button*/
+
+    .container .btn{
+        width: 220px;
+        height:50px;
+        border-radius:5px;
+        font-size: 18px;
+        border:none;
+    }
+    /* Used for Menu button hover*/
+
+    .container .btn:hover{
+        color:yellow;
+        background-color: green;
+        position: relative;
+        cursor: pointer;
+    }
+
+    /* Used for Content*/
+    .content{
+        width: 1200px;
+        height:100vh;
+        margin: auto;
+        padding-top: 100px;
+    }
+    /* Used for Content title Grooming Pet Care*/
+
+    .content h1{
+        font-size: 45px;
+        font-weight: 700;
+        font-family:Arial, Helvetica, sans-serif;
+        color:#fff;
+        cursor: pointer;
+    }
+    /* Used for Content title Grooming Pet Care mouse hover*/
+
+    .content h1:hover{
+        font-size: 45px;
+        font-weight: 700;
+        font-family:Arial, Helvetica, sans-serif;
+        color:darkviolet;
+    }
+    /* Used for Content paragraph*/
+
+    .content p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color:#fff;
+        margin-top:15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    /* Used for Content button*/
+
+    .content .btn{
+        width: 220px;
+        height:50px;
+        border-radius:5px;
+        font-size: 18px;
+        margin-top:25px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        transition: 0.5s;
+    }
+    /* Used for Content button hover*/
+    .content .btn:hover{
+        color:yellow;
+        background-color: green;
+        position: relative;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h2>Pet Care</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Privacy</li>
+            </ul>
+            <button class="btn"><ion-icon name="call-outline"></ion-icon>(+91 12345 67890)</button>
+        </div>
+        <div class="content">
+            <h1>Grooming Pet <br>Care</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam maxime nulla reiciendis similique sunt.<br> Quasi reprehenderit iste autem quas? Dolore itaque assumenda illum, <br>praesentium ab dolorem dolorum quisquam omnis!</p>
+            <button class="btn">LEARN MORE</button>
+            <p>Location: 251/1 Guindy-Chennai-Tamilnadu.</p>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
